@@ -3,7 +3,7 @@ This script lists all installed plugins in Jenkins along with their versions.
 **/
 
 println("Listing all installed plugins:")
-println("=====================================")`
+println("=====================================")
 Jenkins.instance.pluginManager.plugins
         .collect()
 .sort{ it.getShortName() }
